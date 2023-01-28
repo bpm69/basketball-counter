@@ -1,0 +1,135 @@
+@font-face {
+    font-family: Cursedfont;
+    src: url(font/CursedTimerULiL.ttf);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-image: url("images/wooden1.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50rem;
+    border: 0.7rem solid white;
+    border-radius: 0.5rem;
+}
+
+.main-half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.half {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 0.3rem solid red; */
+}
+
+.first-half {
+    padding: 7rem 4rem 4rem 7rem;
+}
+
+.second-half {
+    padding: 7rem 7rem 4rem 4rem;
+}
+
+h2 {
+    font-family: 'Verdana';
+    color: #EEEEEE;
+    text-transform: uppercase;
+    /* font-weight: 700; */
+    font-size: 3.2rem;
+    margin-bottom: 1.2rem;
+    text-shadow: 0 0 0.3rem black;
+}
+
+p {
+    font-family: Cursedfont;
+    /* font-style: normal; */
+    font-weight: 400;
+    font-size: 65px;
+    color: #F94F6D;
+    /* border: 0.2rem solid red; */
+}
+
+.score {
+    background-color: #080001;
+    max-height: 100px;
+    padding: 2rem 4rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    /* border: 0.2rem solid red; */
+    margin-bottom: 2rem;
+}
+
+.increment {
+    /* border: 0.2rem solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border: 0.15rem solid #9AABD8;
+    background: black;
+    color: #9AABD8;
+    font-family: Cursedfont;
+    border-radius: 0.3rem;
+    padding: 0.7rem;
+}
+
+#el-2, #le-2 {
+    margin: 0 1.1rem;
+}
+
+#newgame {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    padding: 1rem;
+    /* border: 0.3rem solid red; */
+}
+
+button:hover {
+    cursor: pointer;
+    /* background-color: white; */
+    color: white;
+}
+
+button:active {
+    color: black;
+    border: 0.15rem solid #F94F6D;
+    background-color: white;
+}
+
+@media all and (max-width: 30rem) {
+    .main {
+        max-width: 38rem;
+    }
+}
+
+
